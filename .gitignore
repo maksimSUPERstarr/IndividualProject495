@@ -1,0 +1,25 @@
+# Виртуальные окружения и локальные настройки окружения.
+.venv/
+venv/
+.env
+.env.*
+
+# Служебные файлы Python и инструментов проверки.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Локальные файлы редакторов и ОС.
+.idea/
+.vscode/*.log
+*.code-workspace
+.DS_Store
+Thumbs.db
+
+# Будущие локальные файлы Django.
+db.sqlite3
+staticfiles/
