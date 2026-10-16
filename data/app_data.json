@@ -1,0 +1,72 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Корпоративный портал задач",
+      "specialization": "Веб-разработка"
+    },
+    {
+      "id": 2,
+      "name": "Внутренний документооборот",
+      "specialization": "Веб-разработка"
+    },
+    {
+      "id": 3,
+      "name": "Личный кабинет сотрудника",
+      "specialization": "Веб-разработка"
+    },
+    {
+      "id": 4,
+      "name": "Анализ продаж",
+      "specialization": "Аналитика"
+    }
+  ],
+  "managers": [
+    {
+      "id": 1,
+      "name": "Анна Смирнова",
+      "specialization": "Веб-разработка",
+      "project_limit": 3,
+      "is_active": true
+    },
+    {
+      "id": 2,
+      "name": "Иван Петров",
+      "specialization": "Аналитика",
+      "project_limit": 2,
+      "is_active": true
+    },
+    {
+      "id": 3,
+      "name": "Мария Соколова",
+      "specialization": "Веб-разработка",
+      "project_limit": 1,
+      "is_active": true
+    },
+    {
+      "id": 4,
+      "name": "Олег Орлов",
+      "specialization": "Веб-разработка",
+      "project_limit": 2,
+      "is_active": false
+    }
+  ],
+  "assignments": [
+    {
+      "id": 1,
+      "project_id": 2,
+      "manager_id": 1,
+      "assigned_on": "2026-09-01",
+      "is_cancelled": false,
+      "cancelled_on": null
+    },
+    {
+      "id": 2,
+      "project_id": 3,
+      "manager_id": 1,
+      "assigned_on": "2026-09-02",
+      "is_cancelled": false,
+      "cancelled_on": null
+    }
+  ]
+}
