@@ -23,3 +23,7 @@ Thumbs.db
 # Будущие локальные файлы Django.
 db.sqlite3
 staticfiles/
+
+# Временные файлы атомарного сохранения хранилища.
+data/.*.tmp
+data/practice.json
