@@ -3,9 +3,13 @@
 import json
 from pathlib import Path
 from tempfile import NamedTemporaryFile
+from typing import TYPE_CHECKING
 
 from data_types import AppData
 from validation import validate_data
+
+if TYPE_CHECKING:
+    from models import Catalog
 
 DEFAULT_DATA_PATH = Path(__file__).resolve().parent / "data" / "app_data.json"
 
@@ -44,3 +48,10 @@ def save_data(data: AppData, file_path: Path = DEFAULT_DATA_PATH) -> None:
     finally:
         if temporary_path is not None:
             temporary_path.unlink(missing_ok=True)
+
+
+def load_catalog(file_path: Path = DEFAULT_DATA_PATH) -> "Catalog":
+    """Загрузить тот же JSON как связанные объекты для веб-интерфейса ПР5."""
+    from models import Catalog
+
+    return Catalog.from_data(load_data(file_path))
